@@ -116,3 +116,51 @@ if "a" in me_list:
     print("available")
 else:
     print("Not found")
+
+##dicts
+agent = {'name': 'Alpha', 'level': 3, 'active': True}
+print(agent)
+
+#הדפסת הערך לפי מפתח
+print(agent["name"])
+print(agent["level"])
+print(agent["active"])
+# print(agent["0"]) יוצר שגיאה
+#הדפסת ערך לפי מפתח - .get
+agent_name = agent.get("name")
+print(agent_name)
+agent_level = agent.get("level")
+print(agent_level)
+agent_active = agent.get("active")
+print(agent_active)
+agent_zero = agent.get("0") # משיב none
+print(agent_zero)
+
+# הוספת ערך\שינוי
+agent["score"]=95
+print(agent)
+agent["level"]=6
+
+#הוספת מפתח \שינוי מפתח .update
+agent.update({"height":185 })
+print(agent)
+agent.update({"level":5})
+print(agent)
+
+#מחיקת מפתח והערך שלו
+del  agent["active"]
+print(agent)
+
+#הדפסת DICT
+#לפי מפתח
+Keys = agent.keys()
+print(Keys)
+#לפי ערכים
+Values = agent.values()
+print(Values)
+#כל הדיקס בזוגות
+all_key_value = agent.items()
+print(all_key_value) 
+
+
+
