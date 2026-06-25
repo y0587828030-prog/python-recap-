@@ -65,102 +65,176 @@
 #     print("loe battery, chrging now")
 #     elif
 
-#list 
-agents = ['Alpha', 'Bravo', 'Charlie', 'Delta', 'Echo']
-print(agents)
-print(agents[0],agents[-1])
-print(agents[1])
-print(agents[0:4])
+##list 
+# agents = ['Alpha', 'Bravo', 'Charlie', 'Delta', 'Echo']
+# print(agents)
+# print(agents[0],agents[-1])
+# print(agents[1])
+# print(agents[0:4])
 
-#הוספת ערכים למקום אחרון
-agents.append("foxtrot")
-print(agents)
+# #הוספת ערכים למקום אחרון
+# agents.append("foxtrot")
+# print(agents)
 
-#הוספת ערכים לליסט לפי מיקום- 
-agents.insert(0, "yehoshua")
-print(agents)
-agents.insert(1, "josh")
-print(agents)
+# #הוספת ערכים לליסט לפי מיקום- 
+# agents.insert(0, "yehoshua")
+# print(agents)
+# agents.insert(1, "josh")
+# print(agents)
 
-#מחיקת ערכים לפי ערך- .remove("v")
-agents.remove("Alpha")
-print(agents)
+# #מחיקת ערכים לפי ערך- .remove("v")
+# agents.remove("Alpha")
+# print(agents)
 
-#מחיקה לפי מיקום- 
-delet_agents = agents.pop(0)
-print(agents)
-print(f"Deleted entry: {delet_agents}")
+# #מחיקה לפי מיקום- 
+# delet_agents = agents.pop(0)
+# print(agents)
+# print(f"Deleted entry: {delet_agents}")
 
-#מחיקה לפי טווח-del משנה- []
-del agents[0:1]
-print(agents)
+# #מחיקה לפי טווח-del משנה- []
+# del agents[0:1]
+# print(agents)
 
-#הצגת מהרשימה
-print(agents[0])
-print(agents[2])
+# #הצגת מהרשימה
+# print(agents[0])
+# print(agents[2])
 
-#הצגת מיקום האינדקס
-index = agents.index("foxtrot")
-print(index)
+# #הצגת מיקום האינדקס
+# index = agents.index("foxtrot")
+# print(index)
 
-me_list = ["a", "b", "c", "d" , "a", "a"]
-x = me_list.index("a")
-print(x)
+# me_list = ["a", "b", "c", "d" , "a", "a"]
+# x = me_list.index("a")
+# print(x)
 
-#ספירת פעמים רשימה
-print(me_list.count("a"))
+# #ספירת פעמים רשימה
+# print(me_list.count("a"))
 
-#בדיקה אם קיים ברשימה 
-me_list = ["a", "b", "c", "d" , "a", "a"]
-if "a" in me_list:
-    print("available")
+# #בדיקה אם קיים ברשימה 
+# me_list = ["a", "b", "c", "d" , "a", "a"]
+# if "a" in me_list:
+#     print("available")
+# else:
+#     print("Not found")
+
+# ##dicts
+# agent = {'name': 'Alpha', 'level': 3, 'active': True}
+# print(agent)
+
+# #הדפסת הערך לפי מפתח
+# print(agent["name"])
+# print(agent["level"])
+# print(agent["active"])
+# # print(agent["0"]) יוצר שגיאה
+# #הדפסת ערך לפי מפתח - .get
+# agent_name = agent.get("name")
+# print(agent_name)
+# agent_level = agent.get("level")
+# print(agent_level)
+# agent_active = agent.get("active")
+# print(agent_active)
+# agent_zero = agent.get("0") # משיב none
+# print(agent_zero)
+
+# # הוספת ערך\שינוי
+# agent["score"]=95
+# print(agent)
+# agent["level"]=6
+
+# #הוספת מפתח \שינוי מפתח .update
+# agent.update({"height":185 })
+# print(agent)
+# agent.update({"level":5})
+# print(agent)
+
+# #מחיקת מפתח והערך שלו
+# del  agent["active"]
+# print(agent)
+
+# #הדפסת DICT
+# #לפי מפתח
+# Keys = agent.keys()
+# print(Keys)
+# #לפי ערכים
+# Values = agent.values()
+# print(Values)
+# #כל הדיקס בזוגות
+# all_key_value = agent.items()
+# print(all_key_value) 
+#print("Keys:", list(agent.keys()), "| Values:", list(agent.values()), "| Items:", list(agent.items()))
+
+# # whil loops
+
+#ליצור לולאה מ1-5
+# i = 1
+# while i <= 5:
+#     print(i)
+#     i += 1
+
+# i = 1
+# while i<= 5:
+#     print(i)
+#     i += 1
+
+##ליצור מ1-10 ולהדפיס רק מספרים זוגיים
+# i =1
+# while i <= 10:
+#     if i % 2 == 0:
+#         print(i)
+#     i += 1
+
+# #break עצירה 
+# i = 1
+# while i < 6:
+#     print(i)
+#     if i == 4:
+#         break
+#     i += 1
+
+# לדלג אם = continue
+i = 0
+while i < 6:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
+# הדפסה לאחר סיום הריצה
+i = 1
+while i <6:
+    i += 1
 else:
-    print("Not found")
+    print("i is no longer than 6")
 
-##dicts
-agent = {'name': 'Alpha', 'level': 3, 'active': True}
-print(agent)
+#הדפסה מליסט
+agents = ['Alpha', 'Bravo', 'Charlie']
+i = 0
+while i < len(agents):
+    print(agents[i])
+    i += 1
 
-#הדפסת הערך לפי מפתח
-print(agent["name"])
-print(agent["level"])
-print(agent["active"])
-# print(agent["0"]) יוצר שגיאה
-#הדפסת ערך לפי מפתח - .get
-agent_name = agent.get("name")
-print(agent_name)
-agent_level = agent.get("level")
-print(agent_level)
-agent_active = agent.get("active")
-print(agent_active)
-agent_zero = agent.get("0") # משיב none
-print(agent_zero)
+## loop for 
+#הדפסה של הליסט
+list = ["a", "b", "c", "d"]
+for x in list:
+ print(x)
 
-# הוספת ערך\שינוי
-agent["score"]=95
-print(agent)
-agent["level"]=6
+#הדפסה של תווים של ערך
+for x in "banana":
+    print(x)
 
-#הוספת מפתח \שינוי מפתח .update
-agent.update({"height":185 })
-print(agent)
-agent.update({"level":5})
-print(agent)
+#עצירת breack
+list = ["yehosh", "josh", "bob"]
+for x in list:
+    print(x)
+    if x == "josh":
+        break
 
-#מחיקת מפתח והערך שלו
-del  agent["active"]
-print(agent)
+list = ["1", "2", "3", "4"]
+for x in list:
+    if x == "3":
+        continue
+    print(x)
 
-#הדפסת DICT
-#לפי מפתח
-Keys = agent.keys()
-print(Keys)
-#לפי ערכים
-Values = agent.values()
-print(Values)
-#כל הדיקס בזוגות
-all_key_value = agent.items()
-print(all_key_value) 
 
 
 
