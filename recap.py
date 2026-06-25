@@ -191,50 +191,84 @@
 #         break
 #     i += 1
 
-# לדלג אם = continue
-i = 0
-while i < 6:
-    i += 1
-    if i == 3:
-        continue
+# # לדלג אם = continue
+# i = 0
+# while i < 6:
+#     i += 1
+#     if i == 3:
+#         continue
+#     print(i)
+# # הדפסה לאחר סיום הריצה
+# i = 1
+# while i <6:
+#     i += 1
+# else:
+#     print("i is no longer than 6")
+
+# #הדפסה מליסט
+# agents = ['Alpha', 'Bravo', 'Charlie']
+# i = 0
+# while i < len(agents):
+#     print(agents[i])
+#     i += 1
+
+# ## loop for 
+# #הדפסה של הליסט
+# list = ["a", "b", "c", "d"]
+# for x in list:
+#  print(x)
+
+# #הדפסה של תווים של ערך
+# # for x in "banana":
+# #     print(x)
+
+# # #עצירת breack
+# # list = ["yehosh", "josh", "bob"]
+# # for x in list:
+# #     print(x)
+# #     if x == "josh":
+# #         break
+
+# ## דילוג על ערך
+# # list = ["1", "2", "3", "4"]
+# # for x in list:
+# #     if x == "3":
+# #         continue
+# #     print(x)
+
+# fruits = ['apple', 'banana', 'cherry']
+# for x in fruits:
+#    print(x)
+
+# x = range(6)
+# for n in x:
+#    print(n)
+
+# x = range(3,8)
+# for n in x:
+#    print(n)
+
+# x = range(50, 100, 25)
+# for n in x:
+#    print(n)
+
+# x = range(0, 10, 2)
+# for n in x:
+#    print(n)
+
+x = ('apple', 'banana', 'cherry')
+y = enumerate(x)
+print(y)
+
+#הדפסת ערך ואינדקס
+fruits = ['apple', 'banana', 'cherry']
+for i , v in enumerate(fruits):
+    print(i, v)
+
+list = ["yehoshua", "josh", "zalts"]
+for i in enumerate(list):
     print(i)
-# הדפסה לאחר סיום הריצה
-i = 1
-while i <6:
-    i += 1
-else:
-    print("i is no longer than 6")
 
-#הדפסה מליסט
-agents = ['Alpha', 'Bravo', 'Charlie']
-i = 0
-while i < len(agents):
-    print(agents[i])
-    i += 1
-
-## loop for 
-#הדפסה של הליסט
-list = ["a", "b", "c", "d"]
-for x in list:
- print(x)
-
-#הדפסה של תווים של ערך
-for x in "banana":
-    print(x)
-
-#עצירת breack
-list = ["yehosh", "josh", "bob"]
-for x in list:
-    print(x)
-    if x == "josh":
-        break
-
-list = ["1", "2", "3", "4"]
-for x in list:
-    if x == "3":
-        continue
-    print(x)
-
-
-
-
+list1 =("1", "2", "3")
+for i in enumerate(list1):
+    print(i)
