@@ -71,5 +71,48 @@ print(agents)
 print(agents[0],agents[-1])
 print(agents[1])
 print(agents[0:4])
+
+#הוספת ערכים למקום אחרון
 agents.append("foxtrot")
 print(agents)
+
+#הוספת ערכים לליסט לפי מיקום- 
+agents.insert(0, "yehoshua")
+print(agents)
+agents.insert(1, "josh")
+print(agents)
+
+#מחיקת ערכים לפי ערך- .remove("v")
+agents.remove("Alpha")
+print(agents)
+
+#מחיקה לפי מיקום- 
+delet_agents = agents.pop(0)
+print(agents)
+print(f"Deleted entry: {delet_agents}")
+
+#מחיקה לפי טווח-del משנה- []
+del agents[0:1]
+print(agents)
+
+#הצגת מהרשימה
+print(agents[0])
+print(agents[2])
+
+#הצגת מיקום האינדקס
+index = agents.index("foxtrot")
+print(index)
+
+me_list = ["a", "b", "c", "d" , "a", "a"]
+x = me_list.index("a")
+print(x)
+
+#ספירת פעמים רשימה
+print(me_list.count("a"))
+
+#בדיקה אם קיים ברשימה 
+me_list = ["a", "b", "c", "d" , "a", "a"]
+if "a" in me_list:
+    print("available")
+else:
+    print("Not found")
