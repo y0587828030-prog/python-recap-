@@ -49,10 +49,11 @@
 
 ###list
 ##הצגת הרשימה
-my_list =["Milk", "eggs", "cheese", "bread", "vegetables"]
+# my_list =["Milk", "eggs", "cheese", "bread", "vegetables"]
 # #הצגה לי מיקום
 # print(my_list[0])
 # print(my_list[1])
+# print(my_list[0:4:2])
 
 # #מיקום האחרון
 # print(my_list[-1])
@@ -78,18 +79,64 @@ my_list =["Milk", "eggs", "cheese", "bread", "vegetables"]
 # my_list.remove("drink")
 # print(my_list)
 
-#מחיקה לפי מיקום
-deleted_my_list = my_list.pop(0)
-print(my_list)
-print(deleted_my_list)
+# #מחיקה לפי מיקום
+# deleted_my_list = my_list.pop(0)
+# print(my_list)
+# print(deleted_my_list)
 
-#מחיקת הערך האחרון
-deleted_my_list2 = my_list.pop() 
-print(my_list)
-print(deleted_my_list2)
+# #מחיקת הערך האחרון
+# deleted_my_list2 = my_list.pop() 
+# print(my_list)
+# print(deleted_my_list2)
 
-#מחיקת הערכים
-my_list.clear()
-print(my_list)
+# #מחיקת הערכים
+# my_list.clear()
+# print(my_list)
+
+##dicts
+my_dict = {
+    "username": "josh" ,
+    "email" : "joshh@mail.com" ,
+    "rank" : 10 ,
+    "active" : True
+}
+#הצגת הדיקט
+print(my_dict)
+
+print(my_dict["username"])
+
+#הצגה לפי מפתח
+print(my_dict.get("username"))
+print(my_dict.get("age")) #מפתח לא קיים ידפיס NONE
+
+# #הדפסה כל המפתחות/ערכים /מפתחות וערכים
+# print(my_dict.keys())
+# print(my_dict.values())
+# print(my_dict.items())
+
+# #עריכת ערך קיים
+# my_dict["rank"] = 100
+# print(my_dict)
+
+# #הוספת מפתח וערך חדשים
+# my_dict["cite"] = "jerusalem"
+# print(my_dict)
+
+# my_dict.update({"active": False, "age": 26})
+# print(my_dict)
+
+# #מחיקת נתונים
+# #מחיקה לפי מפתח
+# del my_dict["email"]
+# print(my_dict)
+
+# #מחיקה ןהחזרת הערך למשתנה חדש
+# deleted_age = my_dict.pop("age")
+# print(my_dict)
+# print(deleted_age)
+
+# #מחיקת כל הDICT
+# my_dict.clear()
+# print(my_dict)
 
 
