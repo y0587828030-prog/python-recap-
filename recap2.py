@@ -109,34 +109,34 @@ print(my_dict["username"])
 print(my_dict.get("username"))
 print(my_dict.get("age")) #מפתח לא קיים ידפיס NONE
 
-# #הדפסה כל המפתחות/ערכים /מפתחות וערכים
-# print(my_dict.keys())
-# print(my_dict.values())
-# print(my_dict.items())
+#הדפסה כל המפתחות/ערכים /מפתחות וערכים
+print(my_dict.keys())
+print(my_dict.values())
+print(my_dict.items())
 
-# #עריכת ערך קיים
-# my_dict["rank"] = 100
-# print(my_dict)
+#עריכת ערך קיים
+my_dict["rank"] = 100
+print(my_dict)
 
-# #הוספת מפתח וערך חדשים
-# my_dict["cite"] = "jerusalem"
-# print(my_dict)
+#הוספת מפתח וערך חדשים
+my_dict["cite"] = "jerusalem"
+print(my_dict)
 
-# my_dict.update({"active": False, "age": 26})
-# print(my_dict)
+my_dict.update({"active": False, "age": 26})
+print(my_dict)
 
-# #מחיקת נתונים
-# #מחיקה לפי מפתח
-# del my_dict["email"]
-# print(my_dict)
+#מחיקת נתונים
+#מחיקה לפי מפתח
+del my_dict["email"]
+print(my_dict)
 
-# #מחיקה ןהחזרת הערך למשתנה חדש
-# deleted_age = my_dict.pop("age")
-# print(my_dict)
-# print(deleted_age)
+#מחיקה ןהחזרת הערך למשתנה חדש
+deleted_age = my_dict.pop("age")
+print(my_dict)
+print(deleted_age)
 
-# #מחיקת כל הDICT
-# my_dict.clear()
-# print(my_dict)
+#מחיקת כל הDICT
+my_dict.clear()
+print(my_dict)
 
 
